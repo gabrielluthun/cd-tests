@@ -8,30 +8,18 @@ body:
       label: Nom de l'apprenant
       description: Sélectionnez l'apprenant
       options:
-        - label: Ayoub
-          value: Ayoub
-        - label: Aurore
-          value: Aurore
-        - label: Martial
-          value: Martial
-        - label: Franck
-          value: Franck
-        - label: Julien
-          value: Julien
-        - label: Messaoud
-          value: Messaoud
-        - label: Yohan
-          value: Yohan
-        - label: Abdelkarim
-          value: Abdelkarim
-        - label: Gabriel
-          value: Gabriel
-        - label: Boris
-          value: Boris
-        - label: Enguerran
-          value: Enguerran
-        - label: Justin
-          value: Justin
+        - Boris
+        - Enguerran
+        - Justin
+        - Ayoub
+        - Aurore
+        - Martial
+        - Franck
+        - Julien
+        - Messaoud
+        - Yohan
+        - Abdelkarim
+        - Gabriel
     validations:
       required: true
 
