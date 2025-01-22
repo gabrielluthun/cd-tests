@@ -1,4 +1,5 @@
-Ce dépôt est un environnement de tests pour expérimenter et valider différentes configurations et pratiques de développement.
+Ce dépôt est un environnement personnel de tests pour expérimenter et valider différentes configurations et pratiques de développement.
+Il est **strictement** personnel et ne doit être utilisé que pour des tests.
 
 ## Objectif
 
