@@ -41,12 +41,3 @@ body:
       label: Description de l'incident
       description: Décrivez l'incident en détail
       placeholder: Écrivez ici...
-
-  - type: input
-    id: student-email
-    attributes:
-      label: Email de l'apprenant
-      description: Entrez l'email de l'apprenant
-      placeholder: Ex: ayoub@gmail.com
-    validations:
-      required: false
