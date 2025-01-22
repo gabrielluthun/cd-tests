@@ -1,0 +1,70 @@
+name: Compatibility Issue
+description: Report a compatibility issue in the project
+
+body:
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Type de Bug
+      description: Quel problème rencontrez-vous ?
+      options:
+        - Bug de compatibilité avec Windows
+        - Bug de compatibilité avec macOS
+        - Bug de compatibilité avec Linux
+        - Bug de compatibilité avec iOS
+        - Bug de compatibilité avec Android
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description détaillée
+      description: Décrivez le problème de compatibilité rencontré
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: Version du système
+      description: Quelle version précise du système d'exploitation utilisez-vous ?
+      placeholder: "Ex: Windows 11 22H2, macOS 14.2.1, Ubuntu 22.04"
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: Version de l'application
+      description: Quelle version de notre application utilisez-vous ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: Décrivez votre environnement (matériel, logiciels tiers, configurations particulières)
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes de reproduction
+      description: Comment reproduire le problème de compatibilité ?
+      placeholder: |
+        1. Configuration utilisée...
+        2. Actions effectuées...
+        3. Problème observé...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs et captures d'écran
+      description: Si applicable, ajoutez des logs d'erreur ou captures d'écran
+      render: shell

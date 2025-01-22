@@ -1,0 +1,69 @@
+name: Feature Request
+description: Suggest a new feature for the project
+
+body:
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Type de fonctionnalité
+      description: Quel type de fonctionnalité souhaitez-vous proposer ?
+      options:
+        - Nouvelle fonctionnalité
+        - Amélioration d'une fonctionnalité existante
+        - Optimisation de performance
+        - Amélioration de l'interface utilisateur
+        - Intégration avec un service tiers
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problème lié
+      description: Cette fonctionnalité résout-elle un problème ? Si oui, décrivez-le
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution proposée
+      description: Décrivez la solution que vous aimeriez voir
+      placeholder: |
+        Je voudrais que le système puisse [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considérées
+      description: Avez-vous envisagé d'autres solutions ou alternatives ?
+      placeholder: |
+        - Alternative 1 : [...]
+        - Alternative 2 : [...]
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Contexte supplémentaire
+      description: Ajoutez tout autre contexte ou captures d'écran concernant votre demande
+      placeholder: |
+        - Maquettes
+        - Exemples d'autres projets
+        - Cas d'utilisation détaillés
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité suggérée
+      description: Quelle est selon vous la priorité de cette fonctionnalité ?
+      options:
+        - Critique
+        - Haute
+        - Moyenne
+        - Basse
+        - Amélioration mineure
+    validations:
+      required: true

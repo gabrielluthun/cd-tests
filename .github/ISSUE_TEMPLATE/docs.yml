@@ -1,0 +1,52 @@
+name: Documentation Issue
+description: Report a documentation issue or request
+
+body:
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Type de problème
+      description: Quel type de problème de documentation rencontrez-vous ?
+      options:
+        - Documentation manquante
+        - Documentation obsolète
+        - Documentation peu claire
+        - Erreur dans la documentation
+        - Traduction manquante
+        - Amélioration suggérée
+        - Autre
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description détaillée
+      description: Décrivez le problème ou votre suggestion pour la documentation
+    validations:
+      required: true
+
+  - type: input
+    id: doc_location
+    attributes:
+      label: Emplacement
+      description: Où se trouve la documentation concernée ? (URL, section, page)
+      placeholder: "Ex: https://docs.example.com/getting-started ou Section Installation"
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion d'amélioration
+      description: Si applicable, proposez une amélioration ou une correction
+      placeholder: |
+        Voici comment je suggère d'améliorer cette partie...
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Contexte supplémentaire
+      description: Tout contexte supplémentaire qui pourrait nous aider à comprendre le problème
+      placeholder: |
+        - Captures d'écran
+        - Exemples de cas d'utilisation
+        - Références externes

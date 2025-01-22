@@ -1,0 +1,80 @@
+name: Bug Report
+description: Report a bug in the project
+
+body:
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Type de Bug
+      description: Quelle est la catégorie principale du bug ?
+      options:
+        - Bugs Fonctionnels (calcul, validation, résultats incorrects)
+        - Bugs d'Interface Utilisateur (affichage, responsive, accessibilité)
+        - Bugs de Performance (lenteur, mémoire, cache)
+        - Bugs de Données (sauvegarde, corruption, synchronisation)
+        - Bugs de Sécurité (authentification, autorisation, vulnérabilités)
+        - Bugs de Compatibilité (navigateur, OS, versions)
+        - Bugs Réseau (connexion, API, timeouts)
+        - Bugs d'Installation/Mise à jour (déploiement, dépendances)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description détaillée
+      description: Décrivez le bug de manière précise
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+      description: Que devrait-il se passer normalement ?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs et captures d'écran
+      description: Si applicable, ajoutez des logs d'erreur ou captures d'écran
+      render: shell
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Quelle version du logiciel utilisez-vous ?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Navigateurs affectés
+      description: Sur quel(s) navigateurs avez-vous rencontré le problème ?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+        - Autre
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Système d'exploitation
+      description: Quel système d'exploitation utilisez-vous ?
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - iOS
+        - Android
+        - Autre
+    validations:
+      required: true 

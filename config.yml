@@ -1,0 +1,61 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & Discussions
+    url: https://github.com/OWNER/REPO/discussions
+    about: Pour les questions générales, les idées et les discussions communautaires
+
+  - name: Documentation
+    url: https://docs.example.com
+    about: Consultez notre documentation pour des réponses à vos questions
+
+  - name: Security Issues
+    url: https://github.com/OWNER/REPO/security/policy
+    about: Veuillez signaler les problèmes de sécurité via notre politique de sécurité
+
+# Configuration des templates
+templates:
+  - name: Bug Report
+    template: bug-report.yml
+    labels: ['bug']
+    
+  - name: Feature Request
+    template: feature-request.yml
+    labels: ['enhancement']
+    
+  - name: Documentation Issue
+    template: docs.yml
+    labels: ['documentation']
+    
+  - name: Compatibility Issue
+    template: compatibility-issue.yml
+    labels: ['compatibility']
+
+# Configuration des labels par défaut
+labels:
+  - name: bug
+    color: d73a4a
+    description: Un problème ou un bug dans le projet
+    
+  - name: enhancement
+    color: a2eeef
+    description: Nouvelle fonctionnalité ou amélioration
+    
+  - name: documentation
+    color: 0075ca
+    description: Problèmes ou améliorations de la documentation
+    
+  - name: compatibility
+    color: fbca04
+    description: Problèmes de compatibilité
+    
+  - name: priority-high
+    color: b60205
+    description: Haute priorité
+    
+  - name: priority-medium
+    color: d93f0b
+    description: Priorité moyenne
+    
+  - name: priority-low
+    color: 0e8a16
+    description: Basse priorité 
