@@ -30,6 +30,10 @@ templates:
     template: compatibility-issue.yml
     labels: ['compatibility']
 
+  - name: Report Student
+    template: report-student.yml
+    labels: ['student']
+
 # Configuration des labels par défaut
 labels:
   - name: bug
